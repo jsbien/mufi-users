@@ -27,18 +27,21 @@ jobs:
           diff_file=$(python mufi_monitor.py)
           echo "diff_file=${diff_file}" >> $GITHUB_OUTPUT
 
-      - name: Commit changes if any
+       - name: Commit and push changes (if any)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add snapshots/ last_hash.txt
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add snapshots/ last_hash.txt || true
+
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "✅ No changes to commit."
           else
-            git commit -m "Auto snapshot: $(date -u)"
-            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:${{ github.ref_name }}
+            git commit -m "📦 Auto snapshot on $(date -u)"
+            git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
+            git push origin HEAD:${{ github.ref_name }}
           fi
 
       - name: Create issue if diff exists
