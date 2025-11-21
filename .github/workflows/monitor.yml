@@ -31,13 +31,24 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -x  # <== Enable debug output
+
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          echo "🔍 Git status before add:"
+          git status
+
           git add snapshots/ last_hash.txt || true
+
+          echo "🔍 Git status after add:"
+          git status
+
           if git diff --cached --quiet; then
             echo "✅ No changes to commit."
           else
             git commit -m "📦 Auto snapshot on $(date -u)"
+            echo "🚀 Trying to push..."
             git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
             git push origin HEAD:${{ github.ref_name }}
           fi
