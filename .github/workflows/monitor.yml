@@ -1,0 +1,44 @@
+name: Monitor MUFI site
+
+on:
+  schedule:
+    - cron: "0 0 1 * *"  # Run on the 1st of every month
+  workflow_dispatch:     # Allow manual trigger
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Python dependencies
+        run: pip install requests
+
+      - name: Run monitoring script
+        id: monitor
+        run: |
+          diff_file=$(python mufi_monitor.py)
+          echo "diff_file=${diff_file}" >> $GITHUB_OUTPUT
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add snapshots/ last_hash.txt
+          git diff --cached --quiet || git commit -m "Auto snapshot: $(date -u)"
+          git push
+        continue-on-error: true
+
+      - name: Create issue if diff exists
+        if: steps.monitor.outputs.diff_file != ''
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          title: "🔍 MUFI website change detected - ${{ steps.monitor.outputs.diff_file }}"
+          content-filepath: "snapshots/${{ steps.monitor.outputs.diff_file }}"
