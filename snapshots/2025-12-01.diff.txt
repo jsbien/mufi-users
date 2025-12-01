@@ -1,0 +1,42 @@
+--- previous.html
++++ current.html
+@@ -431,7 +431,7 @@
+ <tbody>
+ <tr>
+ <td class="px-2 py-1">accepted</td>
+-<td class="px-2 py-1">1758</td>
++<td class="px-2 py-1">1761</td>
+ </tr>
+ <tr>
+ <td class="px-2 py-1">proposed</td>
+@@ -444,7 +444,7 @@
+ </tbody>
+ </table>
+ <!--
+-0.064801931381226s-->
++0.063386917114258s-->
+ </div>
+ <!-- end of page component-->
+ <div class="gefin-div-page-component position-relative mb-3" data-pagepart="page_component.649">
+@@ -585,13 +585,13 @@
+       </div>
+       <script>
+       $(function () {
+-        gefin.drawvisnetwork(1,[{"noderight":"MUFI: Rune glyphs","nodeleft":"MUFI: Runes","directed":1},{"noderight":"MUFI: Font glyphs","nodeleft":"MUFI: Fonts","directed":1},{"noderight":"MUFI: Images of chars","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Font files","nodeleft":"MUFI: Fonts","directed":1},{"noderight":"MUFI: Character glyphs","nodeleft":"MUFI: Font glyphs","directed":1},{"noderight":"MUFI: Project glyphs","nodeleft":"MUFI: Projects","directed":1},{"noderight":"MUFI: Rune strokes","nodeleft":"MUFI: Runes","directed":0},{"noderight":"MUFI: Character glyphs","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Tag links","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Font features","nodeleft":"MUFI: Fonts","directed":1},{"noderight":"MUFI: Character variants","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Font glyphs","nodeleft":"MUFI: Characters","directed":0},{"noderight":"MUFI: Characters","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Alternative combining codepoints","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Rune strokes","nodeleft":"MUFI: Rune stroke variants","directed":0},{"noderight":"MUFI: Rune stroke variants","nodeleft":"MUFI: Runes","directed":1},{"noderight":"MUFI: Character alternative encodings","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Character combinations","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Unicode Data","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Rune glyphs","nodeleft":"MUFI: Font glyphs","directed":1},{"noderight":"MUFI: char variants","nodeleft":"MUFI: Font features","directed":1},{"noderight":"MUFI: Font Scripts","nodeleft":"MUFI: Scripts","directed":1},{"noderight":"MUFI: Character alternative encodings","nodeleft":"MUFI: Font glyphs","directed":1},{"noderight":"MUFI: Project glyphs","nodeleft":"MUFI: Fonts","directed":1},{"noderight":"MUFI: Tag links","nodeleft":"MUFI: Tags","directed":1},{"noderight":"MUFI: Font Scripts","nodeleft":"MUFI: Fonts","directed":1}]);
++        gefin.drawvisnetwork(1,[{"noderight":"MUFI: Images of chars","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Alternative combining codepoints","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Rune strokes","nodeleft":"MUFI: Rune stroke variants","directed":0},{"noderight":"MUFI: Rune strokes","nodeleft":"MUFI: Runes","directed":0},{"noderight":"MUFI: Character glyphs","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Font files","nodeleft":"MUFI: Fonts","directed":1},{"noderight":"MUFI: Font glyphs","nodeleft":"MUFI: Characters","directed":0},{"noderight":"MUFI: Rune glyphs","nodeleft":"MUFI: Font glyphs","directed":1},{"noderight":"MUFI: Rune stroke variants","nodeleft":"MUFI: Runes","directed":1},{"noderight":"MUFI: Tag links","nodeleft":"MUFI: Tags","directed":1},{"noderight":"MUFI: Character combinations","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Tag links","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Font features","nodeleft":"MUFI: Fonts","directed":1},{"noderight":"MUFI: Project glyphs","nodeleft":"MUFI: Fonts","directed":1},{"noderight":"MUFI: Character alternative encodings","nodeleft":"MUFI: Font glyphs","directed":1},{"noderight":"MUFI: Font Scripts","nodeleft":"MUFI: Scripts","directed":1},{"noderight":"MUFI: Character alternative encodings","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Font Scripts","nodeleft":"MUFI: Fonts","directed":1},{"noderight":"MUFI: Rune glyphs","nodeleft":"MUFI: Runes","directed":1},{"noderight":"MUFI: char variants","nodeleft":"MUFI: Font features","directed":1},{"noderight":"MUFI: Characters","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Character glyphs","nodeleft":"MUFI: Font glyphs","directed":1},{"noderight":"MUFI: Font glyphs","nodeleft":"MUFI: Fonts","directed":1},{"noderight":"MUFI: Character variants","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Unicode Data","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Project glyphs","nodeleft":"MUFI: Projects","directed":1}]);
+         $("#gefin-networkalt2-1-wrapper .gefin-network-pause").click(function (e) {
+           gefin.networks[1].network.stopSimulation();
+         });
+       });
+       </script><!--
+-0.021836996078491s--></div>
++0.022064924240112s--></div>
+ <!-- end of page component-->
+ </div>
+     </main>
+@@ -817,4 +817,4 @@
+   </html>
+ 
+ 
+-<!--0.10156011581421 (18) [1]-->
++<!--0.099959850311279 (18) [2]-->
