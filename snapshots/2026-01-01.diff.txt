@@ -1,0 +1,229 @@
+--- previous.html
++++ current.html
+@@ -7,7 +7,7 @@
+   <meta name="author" content="MUFI">
+   <meta name="generator" content="gefin">
+ 
+-  <title>Medieval Unicode Font Initiative</title>
++  <title> Home | Medieval Unicode Font Initiative</title>
+     <!--link rel="canonical" href="https://getbootstrap.com/docs/4.5/getting-started/introduction/"-->
+   <!-- OpenLayers v3 -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+@@ -328,9 +328,9 @@
+          <i class="bi bi-house"></i> Home       </a>
+                   <input class="form-control form-control-sm d-print-none ml-4 ms-4" data-filter="sidenav-list" type="search" placeholder="Filter ..." aria-label="Filter list" style="width:calc(100% - 2.4rem)">
+           <ul class="nav bd-sidenav" id="sidenav-list">
+-              <li class=""><a href="?p=mufi/home/about" class="bd-toc-link d-flex justify-content-between"></a></li>
++              <li class=""><a href="?p=mufi/home/start" class="bd-toc-link d-flex justify-content-between"><i class="bi bi-house"></i> Home</a></li>
++    <li class=""><a href="?p=mufi/home/about" class="bd-toc-link d-flex justify-content-between"><i class="bi bi-question-circle"></i> About</a></li>
+     <li class=""><a href="#" class="d-flex justify-content-between"><div class="border-top w-100"></div></a></li>
+-    <li class=""><a href="?p=mufi/home" class="d-flex justify-content-between"><i class="bi bi-house"></i> Home</a></li>
+     <li class=""><a href="?p=mufi/chars" class="d-flex justify-content-between"><i class="bi bi-alphabet"></i> Characters</a></li>
+     <li class=""><a href="?p=mufi/browse" class="d-flex justify-content-between"><i class="bi bi-hand-index"></i> Browse</a></li>
+     <li class=""><a href="?p=mufi/search" class="d-flex justify-content-between"><i class="bi bi-search"></i> <span class="x-sr-only">Search</span></a></li>
+@@ -376,16 +376,6 @@
+ 
+ <p>For this reason, the MUFI groups is pursuing two lines, (a) coordinating the allocation of medieval characters in the Private Use Area and (b) proposing missing medieval characters to Unicode.</p>
+ 
+-<p>Older versions:</p>
+-<ul>
+-  <li><a href="projects/mufi/pdfs/MUFI%20v4.0%20chart.pdf" target="_blank">Version 4.0 (22 Dec 2015) - code charts</a></li>
+-  <li><a href="projects/mufi/pdfs/MUFI%20v4.0%20alpha.pdf" target="_blank">Version 4.0 (22 Dec 2015) - alphabetical</a></li>
+-  <li><a href="projects/mufi/pdfs/MUFI%20v3.0%20chart.pdf" target="_blank">Version 3.0 (5 July 2009) - code charts</a></li>
+-  <li><a href="projects/mufi/pdfs/MUFI%20v3.0%20alpha.pdf" target="_blank">Version 3.0 (5 July 2009) - alphabetical</a></li>
+-  <li><a href="projects/mufi/pdfs/MUFI%20v2.0%20chart.pdf" target="_blank">Version 2.0 (22 Dec 2006) - code charts</a></li>
+-  <li><a href="projects/mufi/pdfs/MUFI%20v2.0%20alpha.pdf" target="_blank">Version 2.0 (22 Dec 2006) - alphabetical</a></li>
+-  <li><a href="projects/mufi/pdfs/MUFI%20v1.0.pdf" target="_blank">Version 1.0 (8 Dec 2003)</a></li>
+-</ul>
+ 
+ 
+ </div>
+@@ -416,182 +406,6 @@
+ </div>
+ 
+ </div>
+-<!-- end of page component-->
+-<div class="gefin-div-page-component position-relative mb-3" data-pagepart="page_component.646">
+-
+-<!--comp:646-->
+-<h2>About this site</h2><p>This is the new official site at <a href="https://mufi.info" target="_blank" style="font-weight: bold;">mufi.info</a>. It has been developed using the <a href="https://gefin.ku.dk" target="_blank">Gefin framework</a> by Tarrin Wills. The goal is to manage collaboratively the data associated with MUFI as well as fonts, and it includes some experimental work based on various data sources.</p>
+-<table class="table table-sm table-striped table-hover table-responsive gefin-datatable " style="">
+-<thead>
+-<tr>
+-<th class="px-2 py-1">Status</th>
+-<th class="px-2 py-1">n</th>
+-</tr>
+-</thead>
+-<tbody>
+-<tr>
+-<td class="px-2 py-1">accepted</td>
+-<td class="px-2 py-1">1761</td>
+-</tr>
+-<tr>
+-<td class="px-2 py-1">proposed</td>
+-<td class="px-2 py-1">356</td>
+-</tr>
+-<tr>
+-<td class="px-2 py-1">deprecated</td>
+-<td class="px-2 py-1">29</td>
+-</tr>
+-</tbody>
+-</table>
+-<!--
+-0.063386917114258s-->
+-</div>
+-<!-- end of page component-->
+-<div class="gefin-div-page-component position-relative mb-3" data-pagepart="page_component.649">
+-
+-<!--comp:649-->
+-<h2>Data model</h2>
+-<p>The data model is in progress. The graph below is generated from the foreign key constraints in the database.</p>
+-
+-          <!-- generate an interactive network diagram using vis-network -->
+-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+-          <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+-          <script>
+-            gefin.networks = [];
+-            // This method is responsible for drawing the graph, returns the drawn network
+-            gefin.drawvisnetwork = function (n, data) {
+-              const arrowprops = { enabled: true, type: "arrow" };
+-              let container = document.getElementById("gefin-networkalt2-"+n);
+-              let nodesobj = {}; let nodestab = [];
+-              let edgesobj = {}; let edgestab = [];
+-              let defcolor = ($(".navbar").first().css("background-color") || "blue");
+-              data.forEach(function (row, i) {
+-                ["left","right"].forEach(function (side) {
+-                  nodesobj[ row["node"+side] ] = {
+-                    color: row.hasOwnProperty("node"+side+"color") && row["node"+side+"color"]? row["node"+side+"color"]: defcolor,
+-                    label: row["node"+side],
+-                    id   : row.hasOwnProperty("node"+side+"id")? row["node"+side+"id"]: row["node"+side],
+-                    shape: row.hasOwnProperty("node"+side+"shape") && row["node"+side+"shape"]? row["node"+side+"shape"]: "dot",
+-                    href : row.hasOwnProperty("href"+side)? row["href"+side]: undefined,
+-                    size : row.hasOwnProperty("node"+side+"radius")? row["node"+side+"radius"]: 5,
+-                    call : row.hasOwnProperty("node"+side+"call")? row["node"+side+"call"]: undefined,
+-                    font : {
+-                      color: row.hasOwnProperty("node"+side+"fontcolor") && row["node"+side+"fontcolor"]!=""? row["node"+side+"fontcolor"]: undefined
+-                    }
+-                  };
+-                });
+-                edgestab.push({
+-                  from: row.nodeleft, to: row.noderight,
+-                  width: row.hasOwnProperty("weight")? Number(row.weight): 1,
+-                  arrows: row.hasOwnProperty("directed") && row.directed? (row.directed>0? { to: arrowprops }: { from: arrowprops }): undefined,
+-                  label: row.hasOwnProperty("label")? row.label: undefined,
+-                  color: row.hasOwnProperty("color")? row.color: undefined
+-                });
+-                edgesobj[ [row.nodeleft, row.noderight].sort().join(":::") ] = true;
+-              });
+-              for (const [k, v] of Object.entries(nodesobj)) { nodestab.push(v); }
+-
+-              // parsing and collecting nodes and edges
+-              const nodes = new vis.DataSet(nodestab);
+-              const edges = new vis.DataSet(edgestab);
+-              const nodeColors = {};
+-              const allNodes = nodes.get({ returnType: "Object" });
+-              for (nodeId in allNodes) { nodeColors[nodeId] = allNodes[nodeId].color; }
+-              const allEdges = edges.get({ returnType: "Object" });
+-              // adding nodes and edges to the graph
+-              const netdata = { nodes: nodes, edges: edges };
+-              const options = {
+-                configure: { enabled: false },
+-                edges: { color: { inherit: true }, smooth: { enabled: true, type: "dynamic" } },
+-                interaction: { dragNodes: true, hideEdgesOnDrag: false, hideNodesOnDrag: false },
+-                physics: {
+-                  enabled: true,
+-                  solver: data[0].hasOwnProperty("solver")? data[0].solver: "barnesHut"
+-                }
+-              };
+-              if (data[0].hasOwnProperty("hierarchical") && data[0].hierarchical) {
+-                options.layout = { hierarchical: { sortMethod: "directed", shakeTowards: "roots" } };
+-              }
+-              const network = new vis.Network(container, netdata, options);
+-              // on double-click open link if available
+-              network.on("doubleClick", function (e) {
+-                if (e.nodes.length>0 && nodesobj.hasOwnProperty(e.nodes[0]) && nodesobj[e.nodes[0]].hasOwnProperty("href")) {
+-                  window.open(nodesobj[e.nodes[0]].href, "_self");
+-                }
+-              });
+-              // on click fetch new nodes
+-              network.on("click", function (e) {
+-                // if the api call is set
+-                if (e.nodes.length>0 && nodesobj.hasOwnProperty(e.nodes[0]) && nodesobj[e.nodes[0]].hasOwnProperty("call")) {
+-                  // call the api with ajax
+-                  $.get(nodesobj[e.nodes[0]].call, function (d) {
+-                    console.log(d);
+-                    // go through each row and check if there is a new node
+-                    d.forEach(function (row, i) {
+-                      ["left","right"].forEach(function (side) {
+-                        if (!nodesobj.hasOwnProperty(row["node"+side])) {
+-                          nodesobj[ row["node"+side] ] = {
+-                            color: row.hasOwnProperty("node"+side+"color") && row["node"+side+"color"]? row["node"+side+"color"]: defcolor,
+-                            label: row["node"+side],
+-                            id   : row.hasOwnProperty("node"+side+"id") && row["node"+side+"id"]? row["node"+side+"id"]: row["node"+side],
+-                            shape: row.hasOwnProperty("node"+side+"shape") && row["node"+side+"shape"]? row["node"+side+"shape"]: "dot",
+-                            href : row.hasOwnProperty("href"+side) && row["href"+side]? row["href"+side]: undefined,
+-                            size : row.hasOwnProperty("node"+side+"radius") && row["node"+side+"radius"]? row["node"+side+"radius"]: 5,
+-                            call : row.hasOwnProperty("node"+side+"call") && row["node"+side+"call"]? row["node"+side+"call"]: undefined,
+-                            font : { color: row.hasOwnProperty("node"+side+"fontcolor") && row["node"+side+"fontcolor"]!=""? row["node"+side+"fontcolor"]: undefined }
+-                          };
+-                          nodes.add(nodesobj[ row["node"+side] ]);
+-                        }
+-                        // add new edges if no connection already found
+-                        if (!edgesobj.hasOwnProperty([row.nodeleft, row.noderight].sort().join(":::"))) {
+-                          edgesobj[ [row.nodeleft, row.noderight].sort().join(":::") ] = true;
+-                          edges.add({
+-                            from: row.nodeleft,
+-                            to: row.noderight,
+-                            arrows: row.hasOwnProperty("directed") && row.directed? (row.directed>0? { to: arrowprops }: { from: arrowprops }): undefined,
+-                            width: row.hasOwnProperty("weight")? Number(row.weight): 1,
+-                            label: row.hasOwnProperty("label")? row.label: undefined,
+-                            color: row.hasOwnProperty("color") && row["color"]? row["color"]: defcolor,
+-                          });
+-                        }
+-                      });
+-                    });
+-                  });
+-                  // make sure we only do this once
+-                  nodesobj[e.nodes[0]].call = undefined;
+-                }
+-              });
+-              // hide spinner (see below) for big networks that take a while to load
+-              network.initspinnershow = true;
+-              network.on("afterDrawing",function(e){
+-                if (network.initspinnershow) {
+-                  $("#gefin-networkalt2-"+n+"-wrapper").find(".gefin-netalt-spinner").hide();
+-                }
+-              });
+-              // assign to globals
+-              gefin.networks[n] = { network: network, edges: edges, nodes: nodes, nodeIds: nodesobj };
+-              return network;
+-            };
+-            </script>
+-        
+-      <div id="gefin-networkalt2-1-wrapper" data-networkalt2id="1" class="position-relative">
+-       <div id="gefin-networkalt2-1" style="width:100%; height: 75vh; min-height:400px; "></div>
+-       <div class="btn-group" style="position:absolute;bottom:0px;right:0px;opacity:0.6;">
+-        <button class="btn btn-sm btn-primary gefin-network-pause"><i class="bi bi-pause"></i></button>
+-       </div>
+-       <div class="spinner-border text-primary position-absolute gefin-netalt-spinner" style="width: 4rem; height: 4rem; top: calc(50% - 2rem); left: calc(50% - 2rem); z-index:1000" role="status">
+-        <span class="sr-only">Loading...</span>
+-       </div>
+-      </div>
+-      <script>
+-      $(function () {
+-        gefin.drawvisnetwork(1,[{"noderight":"MUFI: Images of chars","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Alternative combining codepoints","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Rune strokes","nodeleft":"MUFI: Rune stroke variants","directed":0},{"noderight":"MUFI: Rune strokes","nodeleft":"MUFI: Runes","directed":0},{"noderight":"MUFI: Character glyphs","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Font files","nodeleft":"MUFI: Fonts","directed":1},{"noderight":"MUFI: Font glyphs","nodeleft":"MUFI: Characters","directed":0},{"noderight":"MUFI: Rune glyphs","nodeleft":"MUFI: Font glyphs","directed":1},{"noderight":"MUFI: Rune stroke variants","nodeleft":"MUFI: Runes","directed":1},{"noderight":"MUFI: Tag links","nodeleft":"MUFI: Tags","directed":1},{"noderight":"MUFI: Character combinations","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Tag links","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Font features","nodeleft":"MUFI: Fonts","directed":1},{"noderight":"MUFI: Project glyphs","nodeleft":"MUFI: Fonts","directed":1},{"noderight":"MUFI: Character alternative encodings","nodeleft":"MUFI: Font glyphs","directed":1},{"noderight":"MUFI: Font Scripts","nodeleft":"MUFI: Scripts","directed":1},{"noderight":"MUFI: Character alternative encodings","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Font Scripts","nodeleft":"MUFI: Fonts","directed":1},{"noderight":"MUFI: Rune glyphs","nodeleft":"MUFI: Runes","directed":1},{"noderight":"MUFI: char variants","nodeleft":"MUFI: Font features","directed":1},{"noderight":"MUFI: Characters","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Character glyphs","nodeleft":"MUFI: Font glyphs","directed":1},{"noderight":"MUFI: Font glyphs","nodeleft":"MUFI: Fonts","directed":1},{"noderight":"MUFI: Character variants","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Unicode Data","nodeleft":"MUFI: Unicode Data","directed":1},{"noderight":"MUFI: Project glyphs","nodeleft":"MUFI: Projects","directed":1}]);
+-        $("#gefin-networkalt2-1-wrapper .gefin-network-pause").click(function (e) {
+-          gefin.networks[1].network.stopSimulation();
+-        });
+-      });
+-      </script><!--
+-0.022064924240112s--></div>
+ <!-- end of page component-->
+ </div>
+     </main>
+@@ -817,4 +631,4 @@
+   </html>
+ 
+ 
+-<!--0.099959850311279 (18) [2]-->
++<!--0.011893033981323 (14) [2]-->
