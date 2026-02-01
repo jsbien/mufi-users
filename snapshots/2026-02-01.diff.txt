@@ -1,0 +1,19 @@
+--- previous.html
++++ current.html
+@@ -186,8 +186,8 @@
+   font-size: 12px;
+ }
+ 
+-@font-face { font-family: Junicode; src: url(projects/mufi/fonts/Junicode_tmp/JunicodeVF-Roman.woff2); font-display: swap; }
+-@font-face { font-family: Junicode; src: url(projects/mufi/fonts/Junicode_tmp/JunicodeVF-Italic.woff2); font-style: italic; font-display: swap; }
++@font-face { font-family: Junicode; src: url(projects/mufi/fonts/Junicode20251024/JunicodeVF-Roman.woff2); font-display: swap; }
++@font-face { font-family: Junicode; src: url(projects/mufi/fonts/Junicode20251024/JunicodeVF-Italic.woff2); font-style: italic; font-display: swap; }
+ 
+ .mufi {
+   font-family: Junicode, Cardo, serif; 
+@@ -631,4 +631,4 @@
+   </html>
+ 
+ 
+-<!--0.011893033981323 (14) [2]-->
++<!--0.018033027648926 (14) [2]-->
